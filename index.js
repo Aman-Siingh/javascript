@@ -18,12 +18,37 @@
 //  studentName = window.promt("Enter your name");
 
 
-let studentName;
+// let studentName;
+// document.getElementById("submit").onclick = function(){
+
+//     studentName=document.getElementById("myText").value;
+
+//     console.log(studentName);
+
+//     document.getElementById("myH1").textContent =`Welcome ${studentName}`;
+// }
+
+// Data type conversion 
+
+// let x= "AMAN";
+// let y= "AMAN";
+
+// x = Number(x);
+// y = String(y);
+
+// console.log(x , typeof x);
+// console.log(y , typeof y);
+
+const PI = 3.1459;
+let rad;
+let area;
+
 document.getElementById("submit").onclick = function(){
 
-    studentName=document.getElementById("myText").value;
+    rad = document.getElementById("myText").value;
+    rad=Number(rad);
+    area= PI*rad**2;
 
-    console.log(studentName);
-
-    document.getElementById("myH1").textContent =`Welcome ${studentName}`;
+    document.getElementById("area").textContent=` Area is ${area} meters`;
 }
+
