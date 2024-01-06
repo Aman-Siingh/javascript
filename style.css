@@ -3,3 +3,26 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:x-large;
 }
+
+#count{
+    text-align-last: center;
+
+}
+
+#button{
+    text-align: center;
+
+}
+
+.btn{
+    background-color: tomato;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius:.25cm ;
+    transition: background-color 0.5ms;
+    
+}
+
+.btn:hover{
+    background-color: yellow;
+}

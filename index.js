@@ -39,16 +39,33 @@
 // console.log(x , typeof x);
 // console.log(y , typeof y);
 
-const PI = 3.1459;
-let rad;
-let area;
+// const PI = 3.1459;
+// let rad;
+// let area;
 
-document.getElementById("submit").onclick = function(){
+// document.getElementById("submit").onclick = function(){
 
-    rad = document.getElementById("myText").value;
-    rad=Number(rad);
-    area= PI*rad**2;
+//     rad = document.getElementById("myText").value;
+//     rad=Number(rad);
+//     area= PI*rad**2;
 
-    document.getElementById("area").textContent=` Area is ${area} meters`;
+//     document.getElementById("area").textContent=` Area is ${area} meters`;
+// }
+
+let count=0;
+
+document.getElementById("incr").onclick = function(){
+
+    count++;
+    document.getElementById("count").textContent= count;
 }
+document.getElementById("decr").onclick = function(){
 
+    count--;
+    document.getElementById("count").textContent= count;
+}
+document.getElementById("reset").onclick = function(){
+
+    count=0;
+    document.getElementById("count").textContent= count;
+}
