@@ -52,20 +52,39 @@
 //     document.getElementById("area").textContent=` Area is ${area} meters`;
 // }
 
-let count=0;
+// let count=0;
 
-document.getElementById("incr").onclick = function(){
+// document.getElementById("incr").onclick = function(){
 
-    count++;
-    document.getElementById("count").textContent= count;
-}
-document.getElementById("decr").onclick = function(){
+//     count++;
+//     document.getElementById("count").textContent= count;
+// }
+// document.getElementById("decr").onclick = function(){
 
-    count--;
-    document.getElementById("count").textContent= count;
-}
-document.getElementById("reset").onclick = function(){
+//     count--;
+//     document.getElementById("count").textContent= count;
+// }
+// document.getElementById("reset").onclick = function(){
 
-    count=0;
-    document.getElementById("count").textContent= count;
+//     count=0;
+//     document.getElementById("count").textContent= count;
+// }
+
+let age;
+const word = document.getElementById("myP");
+
+document.getElementById("submit").onclick=function(){
+        
+    age=document.getElementById("age").value;
+    age=Number(age);
+
+    if(age<18){
+        word.textContent=`You Must 18+`
+    }
+    else if(age>=18){
+        word.textContent=`You are old enough`
+    }
+    else{
+        word.textContent=`Enter a valid age`
+    }
 }
