@@ -27,7 +27,7 @@ body{
     background-color: yellow;
 } */
 
-#myDiv{
+/* #myDiv{
     text-align: center;
 }
 #submit{
@@ -39,4 +39,21 @@ body{
 }
 #submit:hover{
     background-color: aquamarine;
+} */
+
+#body{
+    text-align: center;
+   
+}
+
+#submit{
+    background-color:tomato;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.5ms;
+}
+    
+    
+#submit:hover{
+    background-color:yellow;
 }

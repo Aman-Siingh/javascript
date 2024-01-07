@@ -70,21 +70,52 @@
 //     document.getElementById("count").textContent= count;
 // }
 
-let age;
-const word = document.getElementById("myP");
+// let age;
+// const word = document.getElementById("myP");
 
-document.getElementById("submit").onclick=function(){
+// document.getElementById("submit").onclick=function(){
         
-    age=document.getElementById("age").value;
-    age=Number(age);
+//     age=document.getElementById("age").value;
+//     age=Number(age);
 
-    if(age<18){
-        word.textContent=`You Must 18+`
+//     if(age<18){
+//         word.textContent=`You Must 18+`
+//     }
+//     else if(age>=18){
+//         word.textContent=`You are old enough`
+//     }
+//     else{
+//         word.textContent=`Enter a valid age`
+//     }
+// }
+
+const subscribe = document.getElementById("subscribe");
+const visa = document.getElementById("visa");
+const mastercard =  document.getElementById("mastercard");
+const submit = document.getElementById("submit");
+const msg1 = document.getElementById("msg1");
+const msg2 = document.getElementById("msg2");
+
+submit.onclick=function(){
+
+    if(subscribe.checked){
+        msg1.textContent="You are subscribed"
+        
+        if(visa.checked){
+            msg2.textContent=`and you are paying through VISA`
+    
+        }
+        else if (mastercard.checked){
+            msg2.textContent=`and you are paying through MASTERCARD`
+        }
+        else{
+            msg2.textContent=`Select a Payment gateway`
+        }
     }
-    else if(age>=18){
-        word.textContent=`You are old enough`
-    }
+
     else{
-        word.textContent=`Enter a valid age`
+        msg1.textContent=`You are NOT subcribed`
     }
+
+    
 }
