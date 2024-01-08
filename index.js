@@ -89,33 +89,43 @@
 //     }
 // }
 
-const subscribe = document.getElementById("subscribe");
-const visa = document.getElementById("visa");
-const mastercard =  document.getElementById("mastercard");
-const submit = document.getElementById("submit");
-const msg1 = document.getElementById("msg1");
-const msg2 = document.getElementById("msg2");
+// const subscribe = document.getElementById("subscribe");
+// const visa = document.getElementById("visa");
+// const mastercard =  document.getElementById("mastercard");
+// const submit = document.getElementById("submit");
+// const msg1 = document.getElementById("msg1");
+// const msg2 = document.getElementById("msg2");
 
-submit.onclick=function(){
+// submit.onclick=function(){
 
-    if(subscribe.checked){
-        msg1.textContent="You are subscribed"
+//     if(subscribe.checked){
+//         msg1.textContent="You are subscribed"
         
-        if(visa.checked){
-            msg2.textContent=`and you are paying through VISA`
+//         if(visa.checked){
+//             msg2.textContent=`and you are paying through VISA`
     
-        }
-        else if (mastercard.checked){
-            msg2.textContent=`and you are paying through MASTERCARD`
-        }
-        else{
-            msg2.textContent=`Select a Payment gateway`
-        }
-    }
+//         }
+//         else if (mastercard.checked){
+//             msg2.textContent=`and you are paying through MASTERCARD`
+//         }
+//         else{
+//             msg2.textContent=`Select a Payment gateway`
+//         }
+//     }
 
-    else{
-        msg1.textContent=`You are NOT subcribed`
-    }
+//     else{
+//         msg1.textContent=`You are NOT subcribed`
+//     }
 
     
-}
+// }
+
+let time = 6;
+let greeting = time<12 ? "Good morning" : "Good evening ";
+console.log(greeting);
+
+let purchasedAmount=80;
+let discount = purchasedAmount >100 ? 10:0;
+
+console.log(`Your total is $${purchasedAmount - (purchasedAmount*(discount/100))}`);
+
