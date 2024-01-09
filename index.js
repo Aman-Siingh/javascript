@@ -120,12 +120,25 @@
     
 // }
 
-let time = 6;
-let greeting = time<12 ? "Good morning" : "Good evening ";
-console.log(greeting);
+// let time = 6;
+// let greeting = time<12 ? "Good morning" : "Good evening ";
+// console.log(greeting);
 
-let purchasedAmount=80;
-let discount = purchasedAmount >100 ? 10:0;
+// let purchasedAmount=80;
+// let discount = purchasedAmount >100 ? 10:0;
 
-console.log(`Your total is $${purchasedAmount - (purchasedAmount*(discount/100))}`);
+// console.log(`Your total is $${purchasedAmount - (purchasedAmount*(discount/100))}`);
 
+let testScore=95;
+let grade;
+
+switch(true){
+
+    case testScore>90:
+        grade="A"
+
+
+
+}
+
+console.log(grade);
