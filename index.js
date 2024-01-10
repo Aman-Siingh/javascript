@@ -129,16 +129,28 @@
 
 // console.log(`Your total is $${purchasedAmount - (purchasedAmount*(discount/100))}`);
 
-let testScore=95;
-let grade;
 
-switch(true){
+// let testScore=95;
+// let grade;
 
-    case testScore>90:
-        grade="A"
+// switch(true){
 
+//     case testScore>90:
+//         grade="A"
 
+// }
 
-}
+// console.log(grade);
 
-console.log(grade);
+// String methods 
+
+let userName = "Aman"
+
+console.log(userName.charAt(0));
+console.log(userName.indexOf("m"));
+console.log(userName.lastIndexOf("a"));
+console.log(userName.length);
+console.log(userName.toUpperCase());
+console.log(userName.repeat(2));
+console.log(userName.startsWith("A"));
+console.log(userName.endsWith("m"));
