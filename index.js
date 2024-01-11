@@ -157,12 +157,31 @@
 // console.log(userName)
 
 // string slices
-const  email= "amansingh@gmail.com";
+// const  email= "amansingh@gmail.com";
 
-//console.log( userName.slice(1,3));
+// //console.log( userName.slice(1,3));
 
-let username = email.slice(0,email.indexOf("@"));
-let extension = email.slice(email.indexOf("@")+1);
+// let username = email.slice(0,email.indexOf("@"));
+// let extension = email.slice(email.indexOf("@")+1);
 
-console.log(username);
-console.log(extension);
+// console.log(username);
+// console.log(extension);
+
+// without method chaining
+
+let userName = window.prompt("Enter your Usrename");
+
+// userName=userName.trim();
+// let firstchar= userName.charAt(0);
+// firstchar=firstchar.toUpperCase();
+
+// let extrachar=userName.slice(1);
+// extrachar=extrachar.toLowerCase();
+
+// userName=firstchar+extrachar;
+
+// console.log(userName);
+
+userName= userName.trim().charAt(0).toUpperCase()+ userName.trim().slice(1).toLowerCase();
+
+console.log(userName);
