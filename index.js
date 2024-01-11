@@ -140,17 +140,29 @@
 
 // }
 
-// console.log(grade);
+// console.log(grade); 
 
 // String methods 
 
-let userName = "Aman"
+//  const userName = "Aman"
 
-console.log(userName.charAt(0));
-console.log(userName.indexOf("m"));
-console.log(userName.lastIndexOf("a"));
-console.log(userName.length);
-console.log(userName.toUpperCase());
-console.log(userName.repeat(2));
-console.log(userName.startsWith("A"));
-console.log(userName.endsWith("m"));
+// console.log(userName.charAt(0));
+// console.log(userName.indexOf("m"));
+// console.log(userName.lastIndexOf("a"));
+// console.log(userName.length);
+// console.log(userName.toUpperCase());
+// console.log(userName.repeat(2));
+// console.log(userName.startsWith("A"));
+// console.log(userName.endsWith("m"));
+// console.log(userName)
+
+// string slices
+const  email= "amansingh@gmail.com";
+
+//console.log( userName.slice(1,3));
+
+let username = email.slice(0,email.indexOf("@"));
+let extension = email.slice(email.indexOf("@")+1);
+
+console.log(username);
+console.log(extension);
