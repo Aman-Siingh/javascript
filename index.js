@@ -169,7 +169,7 @@
 
 // without method chaining
 
-let userName = window.prompt("Enter your Usrename");
+// let userName = window.prompt("Enter your Usrename");
 
 // userName=userName.trim();
 // let firstchar= userName.charAt(0);
@@ -182,6 +182,27 @@ let userName = window.prompt("Enter your Usrename");
 
 // console.log(userName);
 
-userName= userName.trim().charAt(0).toUpperCase()+ userName.trim().slice(1).toLowerCase();
+// userName= userName.trim().charAt(0).toUpperCase()+ userName.trim().slice(1).toLowerCase();
 
-console.log(userName);
+// console.log(userName);
+
+// logical operator 
+
+let temp = 2;
+
+if (temp<0 || temp>=30){
+
+    console.log("Weather is BAD");
+}
+else{
+    console.log("Weather is GOOd ");
+}
+
+let isSunny=false;
+
+if(!isSunny){
+    console.log("Cloudy Day ");
+}
+else{
+    console.log("Sunny Day");
+}
