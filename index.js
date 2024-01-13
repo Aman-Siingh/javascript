@@ -185,24 +185,41 @@
 // userName= userName.trim().charAt(0).toUpperCase()+ userName.trim().slice(1).toLowerCase();
 
 // console.log(userName);
-
+// 
 // logical operator 
 
-let temp = 2;
+// let temp = 2;
 
-if (temp<0 || temp>=30){
+// if (temp<0 || temp>=30){
 
-    console.log("Weather is BAD");
-}
-else{
-    console.log("Weather is GOOd ");
-}
+//     console.log("Weather is BAD");
+// }
+// else{
+//     console.log("Weather is GOOd ");
+// }
+ 
+// let isSunny=false;
 
-let isSunny=false;
+// if(!isSunny){
+//     console.log("Cloudy Day ");
+// }
+// else{
+//     console.log("Sunny Day");
+// }
 
-if(!isSunny){
-    console.log("Cloudy Day ");
-}
-else{
-    console.log("Sunny Day");
+let isLogedin = false
+let passward;
+let username;
+
+while(!isLogedin){
+    username= window.prompt("Enter username ");
+    passward= window.prompt("Enter Passward");
+
+    if(username=="Amansingh" && passward=="1234567890"){
+        window.alert("you are now loged in ")
+        isLogedin=true;
+    }
+    else{
+        window.alert('invaild Credentials');
+    }
 }
