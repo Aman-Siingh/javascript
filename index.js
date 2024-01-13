@@ -207,19 +207,24 @@
 //     console.log("Sunny Day");
 // }
 
-let isLogedin = false
-let passward;
-let username;
+// let isLogedin = false
+// let passward;
+// let username;
 
-while(!isLogedin){
-    username= window.prompt("Enter username ");
-    passward= window.prompt("Enter Passward");
+// while(!isLogedin){
+//     username= window.prompt("Enter username ");
+//     passward= window.prompt("Enter Passward");
 
-    if(username=="Amansingh" && passward=="1234567890"){
-        window.alert("you are now loged in ")
-        isLogedin=true;
-    }
-    else{
-        window.alert('invaild Credentials');
-    }
+//     if(username=="Amansingh" && passward=="1234567890"){
+//         window.alert("you are now loged in ")
+//         isLogedin=true;
+//     }
+//     else{
+//         window.alert('invaild Credentials');
+//     }
+// }
+
+for(let i=10;i>0;i--){
+    console.log(i);
 }
+console.log("HAPPY NEW YEAR");
