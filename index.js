@@ -224,7 +224,44 @@
 //     }
 // }
 
-for(let i=10;i>0;i--){
-    console.log(i);
+// Guessing Number game 
+
+let max = 100;
+let min = 1;
+let answer = Math.floor(Math.random()*(max-min))+min;
+
+let attempts = 0;
+let running = true;
+let input;
+
+while(running){
+    attempts++
+    if(attempts<=5){
+        input=window.prompt(`Enter a Number between 1-100 ${attempts}th attempt`);
+        input=Number(input);
+
+        if(isNaN(input)){
+            window.alert("Enter a Valid input");
+        }
+        else if(input<min || input>max){
+            window.alert("STAY WITHIN THE RANGE");
+        }
+        else{
+            if (input<answer){
+                window.alert("TOO LOW");
+            }
+            else if(input>answer){
+                window.alert("TOO HIGH")
+            }
+            else{
+                window.alert(`YOU GOT IT :) , IN ${attempts} ATTEMPTS`);
+
+                running=false;
+            }
+        }
+    }
+    else{
+        window.alert(`OUT OF ATTEMPTS :( Answer is = ${answer}`);
+        running=false;
+    }
 }
-console.log("HAPPY NEW YEAR");
