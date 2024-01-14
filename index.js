@@ -268,21 +268,29 @@
 
 
 
-function add(x,y){
-    console.log( x+y); // return will only store the value in the calling of function 
-    //console.log will print it of console 
+// function add(x,y){
+//     console.log( x+y); // return will only store the value in the calling of function 
+//     //console.log will print it of console 
+// }
+
+// function even(number){
+//     return number%2===0 ? true : false;
+// }
+
+// console.log(even(12));
+
+// function isValidEmail(email){
+//     return email.includes("@") ? true : false;
+// }
+
+// console.log(isValidEmail("aman@jd"));
+
+
+let x =2;
+
+function function1(){
+    console.log(x)
+    let y=2;
+    console.log(y)
 }
-
-function even(number){
-    return number%2===0 ? true : false;
-}
-
-console.log(even(12));
-
-function isValidEmail(email){
-    return email.includes("@") ? true : false;
-}
-
-console.log(isValidEmail("aman@jd"));
-
-
+function1();
