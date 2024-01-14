@@ -226,42 +226,63 @@
 
 // Guessing Number game 
 
-let max = 100;
-let min = 1;
-let answer = Math.floor(Math.random()*(max-min))+min;
+// let max = 100;
+// let min = 1;
+// let answer = Math.floor(Math.random()*(max-min))+min;
 
-let attempts = 0;
-let running = true;
-let input;
+// let attempts = 0;
+// let running = true;
+// let input;
 
-while(running){
-    attempts++
-    if(attempts<=5){
-        input=window.prompt(`Enter a Number between 1-100 ${attempts}th attempt`);
-        input=Number(input);
+// while(running){
+//     attempts++
+//     if(attempts<=5){
+//         input=window.prompt(`Enter a Number between 1-100 ${attempts}th attempt`);
+//         input=Number(input);
 
-        if(isNaN(input)){
-            window.alert("Enter a Valid input");
-        }
-        else if(input<min || input>max){
-            window.alert("STAY WITHIN THE RANGE");
-        }
-        else{
-            if (input<answer){
-                window.alert("TOO LOW");
-            }
-            else if(input>answer){
-                window.alert("TOO HIGH")
-            }
-            else{
-                window.alert(`YOU GOT IT :) , IN ${attempts} ATTEMPTS`);
+//         if(isNaN(input)){
+//             window.alert("Enter a Valid input");
+//         }
+//         else if(input<min || input>max){
+//             window.alert("STAY WITHIN THE RANGE");
+//         }
+//         else{
+//             if (input<answer){
+//                 window.alert("TOO LOW");
+//             }
+//             else if(input>answer){
+//                 window.alert("TOO HIGH")
+//             }
+//             else{
+//                 window.alert(`YOU GOT IT :) , IN ${attempts} ATTEMPTS`);
 
-                running=false;
-            }
-        }
-    }
-    else{
-        window.alert(`OUT OF ATTEMPTS :( Answer is = ${answer}`);
-        running=false;
-    }
+//                 running=false;
+//             }
+//         }
+//     }
+//     else{
+//         window.alert(`OUT OF ATTEMPTS :( Answer is = ${answer}`);
+//         running=false;
+//     }
+// }
+
+
+
+function add(x,y){
+    console.log( x+y); // return will only store the value in the calling of function 
+    //console.log will print it of console 
 }
+
+function even(number){
+    return number%2===0 ? true : false;
+}
+
+console.log(even(12));
+
+function isValidEmail(email){
+    return email.includes("@") ? true : false;
+}
+
+console.log(isValidEmail("aman@jd"));
+
+
