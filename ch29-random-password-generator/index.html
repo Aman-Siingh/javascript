@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passward Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container"  class="options">
+
+        <h1>Passward Generator</h1>
+
+        <h3>Fill the parameters</h3>
+        <label >No. Of Characters</label>
+        <input type="number" name="" id="numOfChar" class="options" placeholder="Mininum 2 Characters" min="2">
+        <br>
+        <input type="checkbox" id="lowerCase" class="options" >
+        <label for="lowerCase">Lower Case</label>
+        <br>
+        <input type="checkbox" id="upperCase" class="options" >
+        <label for="upperCase">Upper Case</label>
+        <br>
+        <input type="checkbox" id="numbers" class="options" >
+        <label for="numbers">Numeric Values</label>
+        <br>
+        <input type="checkbox" id="special" class="options" >
+        <label for="special">Special Characters</label>
+        <br>
+        <p id="result"></p>
+        <br>
+        <button type="submit" onclick="generate()" id="button">Generate</button>
+
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
