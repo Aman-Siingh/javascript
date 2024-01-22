@@ -1,4 +1,54 @@
-#diceImage{
-
-    size: 0.2em;
+body{
+    background-color:whitesmoke;
 }
+
+
+#container{
+    text-align: center;
+    margin: auto;
+    margin-top: 35px ;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    max-width: 400px;
+    min-height: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 35px #2a95a5;
+    border: 15em;
+}
+
+#button{
+    background-color: #2a95a5;
+    border: none ;
+    border-radius: 5px ;
+    padding: 10px 10px ;
+    box-shadow: 5px 5px 25px #2a95a5;
+    cursor: pointer;
+    color: white;
+}
+
+#button:hover{
+    background-color: #34b2c5;
+    box-shadow: #34b2c5;
+}
+
+#diceResult{
+   
+    font-size: 1.5em;
+    margin: 15px ;
+}
+
+#diceImage img{
+
+    height: 100px;
+}
+
+#numOfDice{
+
+    text-align: center;
+    padding: 8px 8px;
+}
+
+
+
+

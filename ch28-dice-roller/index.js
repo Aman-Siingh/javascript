@@ -22,7 +22,7 @@ function rollDice(){
 
     }
 
-    diceResult.textContent=value.join("-")
+    diceResult.textContent=value.join(" - ")
     diceImage.innerHTML=image.join("  ")
 }
 
