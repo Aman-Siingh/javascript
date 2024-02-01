@@ -16,5 +16,23 @@ function odd(element){
     return element%2!==0;
 }
 
-console.log(newNumber);
-console.log(newNumber1);
+
+let ages = [12,13,18,18,19,35,56,72,7,8,10,67,];
+
+
+const adults= ages.filter(isAdult);
+const child = ages.filter(isChild);
+
+function isAdult(element){
+
+    return element>=18;
+}
+
+function isChild(element){
+
+  
+    return element<18;
+}
+
+console.log(child);
+console.log(adults);
