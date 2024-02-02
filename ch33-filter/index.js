@@ -30,9 +30,24 @@ function isAdult(element){
 
 function isChild(element){
 
-  
     return element<18;
 }
 
-console.log(child);
-console.log(adults);
+const fruits = ["apple","orange","Banana","coconut","pomogranate","pineapple"];
+
+const short = fruits.filter(shortLetter);
+const long = fruits.filter(longLetter);
+
+function shortLetter(element){
+
+    return element.length <=6;
+}
+
+function longLetter(element){
+
+    return element.length > 6;
+}
+
+console.log(short);
+console.log(long);
+console.log(fruits);
