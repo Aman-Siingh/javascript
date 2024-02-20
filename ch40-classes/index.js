@@ -13,9 +13,22 @@ class Product{
         console.log(`Price $${this.price}`);
 
     }
+
+    calculateTax(salesTax){
+
+        return this.price + (this.price * salesTax);
+    }
+
+
 }
+
+const salesTax = 0.03; 
 
 const product1  = new Product("Shirt", 1000);
 const product2 = new Product("Pants", 5000);
 
 product1.displayObject();
+
+const total = product1.calculateTax(salesTax);
+
+console.log(total);
