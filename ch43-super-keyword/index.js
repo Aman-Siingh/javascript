@@ -12,7 +12,7 @@ class Animal {
 class Rabbit  extends Animal{
 
     constructor(runSpeed){
-        super(name);
+        super(name,age);
         this.runSpeed=runSpeed;
     
     }
